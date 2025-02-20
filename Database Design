@@ -1,0 +1,31 @@
+Database Design
+ The database schema includes the following:
+
+Tables:
+•	roombooking: Stores room details (sl_no, room, availability, price per day)
+•	users: Stores user information (id, username, password, email)
+•	order: Stores order information (order_id, item, quantity, cost, total_price)
+•	laundry_services: Stores laundry details (sl_no, item, price)
+•	order_deletion_log:  Stores details of deleted order (log_id, order_id, item, quantity, cost, total_price, deteted_at)
+•	Food: 
+	Salad (sl_no, item, price)
+	beverages(sl_no, item, price)
+	desserts (sl_no, item, price)
+	biriyani (sl_no, item, price)
+	pasta (sl_no, item, price)
+	roti (sl_no, item, price)
+	curry (sl_no, item, price)
+	chaat (sl_no, item, price)
+	quesadillas (sl_no, item, price)
+
+View:
+•	view_available_rooms:  Stores room details (room, availability, price per day) – gets details from roombooking table
+•	view_food_items: Stores food details (item, price, category) – gets details from all the 9 tables of food.
+
+Procedure:
+•	proc_update_availability:  This procedure updates the availability of a room after a booking is made. It decrements the room's availability by 1 to reflect the new status.
+•	proc_validate_user_input: This procedure validates user input during registration, ensuring that the username, email, and password meet specific criteria (e.g., password length, email format).
+
+Trigger:
+•	trigger_user_registration:  During registration, this trigger makes sure that the email id entered does not already have a account.
+•	trigger_order_deletion: This trigger logs the details of removed items from the bill to the order_deletion_log table, including the item, quantity, price, and deletion timestamp.
