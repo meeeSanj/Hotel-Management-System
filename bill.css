@@ -1,0 +1,237 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #7F3FBF, #4C8BF5);
+    color: #333;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Header and Footer */
+header, footer {
+    text-align: center;
+    color: #fff;
+}
+
+/* Bill Box Container */
+.bill-box {
+    background: #fff;
+    padding: 30px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+/* Bill Header */
+.bill-box h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3f8efc;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.bill-box h2 {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #4C8BF5;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Table Styling */
+.bill-box table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.bill-box th, .bill-box td {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.bill-box th {
+    background: #4C8BF5;
+    color: #fff;
+    font-weight: bold;
+}
+
+.bill-box td {
+    background: #f9f9f9;
+    color: #555;
+}
+
+/* Table Row Hover Effect */
+.bill-box tr:hover {
+    background-color: #f0f8ff;
+    transition: background-color 0.3s ease;
+}
+
+/* Update and Remove Buttons */
+.bill-box .remove-btn {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.bill-box .remove-btn {
+    background-color: #a12213;
+    color: white;
+}
+
+.bill-box .remove-btn:hover {
+    background-color: #60241e;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Empty State Styling */
+.no-items-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+}
+
+.no-items-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+.no-items-icon {
+    margin-bottom: 15px;
+}
+
+.no-items-icon svg {
+    fill: #4C8BF5;
+    width: 60px;
+    height: 60px;
+}
+
+.no-items-box p {
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Logout and Dashboard Buttons */
+.logout-btn, .dashboard-btn {
+    position: absolute;
+    top: 10px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.logout-btn {
+    right: 20px;
+    background-color: #a12213;
+}
+
+.logout-btn:hover {
+    background-color: #60241e;
+}
+
+.dashboard-btn {
+    left: 20px;
+    background-color: #4513a1;
+}
+
+.dashboard-btn:hover {
+    background-color: #31116d;
+}
+
+
+
+
+
+
+/* Removed list */
+.removed-items-box {
+    background: #fff;
+    padding: 30px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.removed-items-box h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3f8efc;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.removed-items-box h2 {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #4C8BF5;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Table Styling */
+.removed-items-box table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.removed-items-box th, .bill-box td {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.removed-items-box th {
+    background: #4C8BF5;
+    color: #fff;
+    font-weight: bold;
+}
+
+.removed-items-box td {
+    background: #f9f9f9;
+    color: #555;
+}
+
+/* Table Row Hover Effect */
+.removed-items-box tr:hover {
+    background-color: #f0f8ff;
+    transition: background-color 0.3s ease;
+}

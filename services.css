@@ -1,0 +1,399 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #7F3FBF, #4C8BF5); /* Softer gradient from a muted purple to a more gentle blue */
+    color: #fff; /* White text for better readability */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+header, footer {
+    text-align: center;
+    color: #fff;
+}
+
+a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #6a11cb;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+/* Form Section */
+form {
+    background-color: #fff;  /* White background for form */
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for subtle effect */
+    margin: 20px;
+}
+form h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333; /* Ensure the heading is dark enough for readability */
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    display: block;
+    color: #333; /* Label color for better contrast */
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #f8f8f8;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #2575fc;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #2575fc;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6a11cb;
+}
+
+p {
+    text-align: right;
+    color: #333; /* Ensure the text is visible */
+}
+
+.error {
+    color: rgb(107, 12, 12);
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 20px; /* Space between the error and form */
+}
+
+.success {
+    color: rgb(34, 139, 34);
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 15px; /* Space for success message */
+}
+
+/* Dashboard container styling */
+.dashboard-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for subtle effect */
+    margin: 20px;
+    position: relative; /* Ensure the logout button is positioned relative to this container */
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Bill Button */
+.bill-btn {
+    position: absolute;
+    top: 10px;
+    left: 155px;
+    background-color: #4513a1;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.bill-btn:hover {
+    background-color: #31116d;
+    color: rgb(171, 169, 169);
+}
+
+/* Box for the service options */
+.options-box {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-btn {
+    background-color: #2575fc;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.service-btn:hover {
+    background-color: #cdc9d0;
+}
+
+/* Logout Button */
+.logout-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #a12213;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #60241e;
+    color: rgb(171, 169, 169);
+}
+
+/* Dashboard button */
+.dashboard-btn {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    background-color: #4513a1;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-btn:hover {
+    background-color: #31116d;
+    color: rgb(171, 169, 169);
+}
+
+/* room_booking */
+.dashboard-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for subtle effect */
+    margin: 20px;
+    position: relative; /* Ensure the logout button is positioned relative to this container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/* Styling for the form group */
+.dashboard-container{
+    align-items: center;
+}
+.form-group {
+    align-items: center;
+    margin-bottom: 20px; /* Space between form elements */
+    position: relative;
+}
+
+/* Styling for the label */
+label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Styling for the select dropdown */
+select {
+    width: 100%;
+    padding: 15px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    color: #333;
+    appearance: none; /* Remove default dropdown styling */
+    -webkit-appearance: none; /* For Safari */
+    -moz-appearance: none; /* For Firefox */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Custom arrow for the select dropdown */
+select::-ms-expand {
+    display: none;
+}
+
+select:focus {
+    border-color: #2575fc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.5); /* Add a blue glow on focus */
+}
+
+/* Hover effect for the select dropdown */
+select:hover {
+    border-color: #6a11cb;
+}
+
+/* Styling for the option list */
+option {
+    padding: 10px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Add a subtle shadow to the select field */
+select {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling (to match the rest of the page) */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #2575fc;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6a11cb;
+}
+
+/* Laundry Request Form Specific Styles */
+.laundry-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.laundry-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.laundry-form .form-group {
+    margin-bottom: 20px;
+}
+
+.laundry-form label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.laundry-form input,
+.laundry-form select,
+.laundry-form textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.laundry-form input:focus,
+.laundry-form select:focus,
+.laundry-form textarea:focus {
+    border-color: #2575fc;
+    outline: none;
+}
+
+.laundry-form button {
+    background-color: #2575fc;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.laundry-form button:hover {
+    background-color: #6a11cb;
+}
+
+.laundry-form .error {
+    color: rgb(107, 12, 12);
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.laundry-form .success {
+    color: rgb(34, 139, 34);
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 15px;
+}
